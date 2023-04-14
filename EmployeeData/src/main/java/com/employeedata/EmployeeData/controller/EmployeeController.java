@@ -57,12 +57,12 @@ public class EmployeeController {
 	    	empService.deleteEmployeeById(Id);
 	        return "Department deleted Successfully!!";
 	    }
-
-	    @PutMapping("/employee/{id}")
-	    public Employee updateDepartment(@PathVariable("id") Long Id,
-	                                       @RequestBody Employee employee) {
-	        return empService.updateEmployeet(Id,employee);
-	    }
+//
+//	    @PutMapping("/employee/{id}")
+//	    public Employee updateDepartment(@PathVariable("id") Long Id,
+//	                                       @RequestBody Employee employee) {
+//	        return empService.updateEmployeet(Id,employee);
+//	    }
 
 
 }

@@ -19,7 +19,7 @@ public interface EmployeeService {
 
 	    public void deleteEmployeeById(Long id);
 
-	    public Employee updateEmployeet(Long id, Employee employee);
+	  //  public Employee updateEmployeet(Long id, Employee employee);
 	    
 	    public List<Employee>  getAllEmp();
 

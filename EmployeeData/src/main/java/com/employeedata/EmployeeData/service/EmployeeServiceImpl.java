@@ -45,26 +45,26 @@ public class EmployeeServiceImpl implements EmployeeService {
 		
 	}
 
-	@Override
-	public Employee updateEmployeet(Long id, Employee employee) {
-		 Employee empUpdate = empRepo.findById(id).get();
-		 if(Objects.nonNull(employee.getFirstName()) &&
-			        !"".equalsIgnoreCase(employee.getFirstName())) {
-			 empUpdate.setFirstName(employee.getFirstName());
-			        }
-
-			        if(Objects.nonNull(employee.getLastName()) &&
-			                !"".equalsIgnoreCase(employee.getLastName())) {
-			        	empUpdate.setLastName(employee.getLastName());
-			        }
-
-			        if(Objects.nonNull(employee.getEmail()) &&
-			                !"".equalsIgnoreCase(employee.getEmail())) {
-			        	empUpdate.setEmail(employee.getEmail());
-			        }
-					return empRepo.save(empUpdate);
-			             
-	}
+//	@Override
+//	public Employee updateEmployeet(Long id, Employee employee) {
+//		 Employee empUpdate = empRepo.findById(id).get();
+//		 if(Objects.nonNull(employee.getFirstName()) &&
+//			        !"".equalsIgnoreCase(employee.getFirstName())) {
+//			 empUpdate.setFirstName(employee.getFirstName());
+//			        }
+//
+//			        if(Objects.nonNull(employee.getLastName()) &&
+//			                !"".equalsIgnoreCase(employee.getLastName())) {
+//			        	empUpdate.setLastName(employee.getLastName());
+//			        }
+//
+//			        if(Objects.nonNull(employee.getEmail()) &&
+//			                !"".equalsIgnoreCase(employee.getEmail())) {
+//			        	empUpdate.setEmail(employee.getEmail());
+//			        }
+//					return empRepo.save(empUpdate);
+//			             
+//	}
 
 	@Override
 	public List<Employee> getAllEmp() {
